@@ -1,0 +1,11 @@
+[color]
+	ui = true
+[user]
+	name = Jonathan Hedstrom
+	email = jhedstrom@gmail.com
+
+[alias]
+        st = status
+        co = checkout
+        pick = cherry-pick -s
+        ci = commit -
