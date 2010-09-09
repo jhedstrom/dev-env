@@ -9,3 +9,5 @@
         co = checkout
         pick = cherry-pick -s
         ci = commit -
+[core]
+	excludesfile = /home/jonathan/.gitignore
