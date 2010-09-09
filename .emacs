@@ -8,9 +8,9 @@
 (autoload 'drupal-mode "drupal-mode" "Minor mode for editing Drupal PHP files." t)
 
 ; Drupal
-(add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\)$" . drupal-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\|profile\\)$" . drupal-mode))
 (add-to-list 'auto-mode-alist '("/drupal.*\\.\\(php\\|inc\\)$" . drupal-mode))
-(add-to-list 'auto-mode-alist '("\\.info" . conf-windows-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(info\\|make\\)$" . conf-windows-mode))
 
 ; Geben
 (autoload 'geben "geben" "PHP Debugger on Emacs" t)
