@@ -110,6 +110,11 @@ PROMPT_COMMAND='history -a'
 # Path
 PATH=$PATH:/home/jonathan/bin
 
+# CVS
+CVSROOT=:pserver:jhedstrom@cvs.drupal.org:/cvs/drupal-contrib
+
 # Aliases
 alias tun='pkill -f oolon-tunnels; ssh -f -N -i /home/jonathan/.ssh/id_rsa -o ControlMaster=no oolon-tunnels'
 alias o='gnome-open'
+alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
+
