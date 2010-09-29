@@ -10,7 +10,6 @@
   (c-set-offset 'arglist-intro '+) ; for FAPI arrays and DBTNG
   (c-set-offset 'arglist-cont-nonempty 'c-lineup-math) ; for DBTNG fields and values
   ; More Drupal-specific customizations here
-  (setq show-paren-mode t)
 )
 
 (defconst my-php-style

@@ -14,3 +14,9 @@
 
 ; Geben
 (autoload 'geben "geben" "PHP Debugger on Emacs" t)
+
+(put 'downcase-region 'disabled nil)
+
+(show-paren-mode 1)
+
+(setq show-paren-delay 0)
