@@ -11,3 +11,4 @@
         ci = commit -
 [core]
 	excludesfile = /home/jonathan/.gitignore
+        editor = vim

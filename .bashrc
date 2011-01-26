@@ -13,8 +13,8 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=1000000
+HISTFILESIZE=2000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -118,3 +118,9 @@ alias tun='pkill -f oolon-tunnels; ssh -f -N -i /home/jonathan/.ssh/id_rsa -o Co
 alias o='gnome-open'
 alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
 
+# For drush make, export http_proxy for use with squid.
+export http_proxy=http://localhost:3128
+export ftp_proxy=http://localhost:3128
+
+# Set vim to default terminal editor
+export EDITOR=vim
