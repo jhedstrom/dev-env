@@ -12,3 +12,5 @@
 [core]
 	excludesfile = /home/jonathan/.gitignore
         editor = vim
+[merge]
+	tool = vimdiff
