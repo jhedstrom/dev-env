@@ -1,3 +1,5 @@
+.drush/coder
+.drush/drush_make
 .emacs.d/auto-save-list/
 .emacs.d/geben/
 *~
