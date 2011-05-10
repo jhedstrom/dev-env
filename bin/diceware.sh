@@ -2,7 +2,7 @@
 #
 # Use 5-7 words for strong passwords
 
-filename=/home/jonathan/bin/diceware8k.txt
+filename=~/bin/diceware8k.txt
 
 if test -z "$1"
 then
