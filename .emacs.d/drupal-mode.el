@@ -2,6 +2,7 @@
   "Drupal php-mode."
   (interactive)
   (php-mode)
+  (php-electric-mode)
   (message "Drupal mode activated.")
   (set 'tab-width 2)
   (set 'c-basic-offset 2)

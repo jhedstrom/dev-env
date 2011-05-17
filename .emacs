@@ -5,6 +5,7 @@
 (add-hook 'php-mode-hook 'my-php-mode)
 
 (autoload 'php-mode "php-mode" "Major mode for editing php code." t)
+(autoload 'php-electric-mode "php-electric" "Enhancements for php mode." t)
 (autoload 'drupal-mode "drupal-mode" "Minor mode for editing Drupal PHP files." t)
 
 ; Drupal
