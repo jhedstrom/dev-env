@@ -8,9 +8,12 @@
         st = status
         co = checkout
         pick = cherry-pick -s
+        revert = revert -s
         ci = commit -
 [core]
-	excludesfile = /home/jonathan/.gitignore
+	excludesfile = /home/jhedstrom/.gitignore
         editor = vim
 [merge]
 	tool = vimdiff
+[url "git+ssh://jhedstrom@git.drupal.org/project/"]
+  insteadOf = dm:
