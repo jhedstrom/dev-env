@@ -108,13 +108,13 @@ shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 # Path
-PATH=$PATH:/home/jonathan/bin
+PATH=$PATH:/home/jhedstrom/bin
 
 # CVS
 CVSROOT=:pserver:jhedstrom@cvs.drupal.org:/cvs/drupal-contrib
 
 # Aliases
-alias tun='pkill -f oolon-tunnels; ssh -f -N -i /home/jonathan/.ssh/id_rsa -o ControlMaster=no oolon-tunnels'
+alias tun='pkill -f oolon-tunnels; ssh -f -N -i /home/jhedstrom/.ssh/id_rsa -o ControlMaster=no oolon-tunnels'
 alias o='gnome-open'
 alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
 
@@ -124,3 +124,6 @@ export ftp_proxy=http://localhost:3128
 
 # Set vim to default terminal editor
 export EDITOR=vim
+
+# Output MOTD
+cat /etc/motd
