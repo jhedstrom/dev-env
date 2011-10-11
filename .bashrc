@@ -109,6 +109,7 @@ PROMPT_COMMAND='history -a'
 
 # Path
 PATH=$PATH:/home/jhedstrom/bin
+PATH=$PATH:/var/lib/gems/1.8/bin
 
 # CVS
 CVSROOT=:pserver:jhedstrom@cvs.drupal.org:/cvs/drupal-contrib
