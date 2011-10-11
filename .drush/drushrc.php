@@ -169,3 +169,12 @@ $command_specific['dl'] = array('destination' => 'sites/all/modules/contrib');
 #   'theme_default' => 'minnelli',
 #   'anonymous' => 'Visitor',
 # );
+
+/**
+ * XHProf settings.
+ */
+$options['drush-xhprof-url'] = 'http://localhost/xhprof_html';
+$options['drush-xhprof-directory'] = '/usr/share/php5-xhprof';
+
+// Git username
+$options['gitusername'] = 'jhedstrom';
