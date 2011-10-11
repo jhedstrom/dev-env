@@ -5,6 +5,21 @@ $aliases['wef'] = array(
   'root' => '/home/jhedstrom/work/clients/acquia-wef/docroot',
 );
 
+$aliases['sr'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/clients/streetroots',
+);
+
+$aliases['np'] = array(
+  'uri' => 'np.dev',
+  'root' => '/home/jhedstrom/work/drupal',
+);
+
+$aliases['ds'] = array(
+  'uri' => 'ds.dev',
+  'root' => '/home/jhedstrom/work/drupal',
+);
+
 $aliases['dr'] = array(
   'uri' => 'dr.dev',
   'root' => '/home/jhedstrom/work/drupal',
@@ -23,6 +38,11 @@ $aliases['fc'] = array(
 $aliases['do'] = array(
   'uri' => 'do.dev',
   'root' => '/home/jhedstrom/work/drupal-6',
+);
+
+$aliases['d7'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/drupal'
 );
 
 // Gargravarr aliases.
