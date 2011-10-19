@@ -10,6 +10,11 @@ $aliases['sr'] = array(
   'root' => '/home/jhedstrom/work/clients/streetroots',
 );
 
+$aliases['vr'] = array(
+  'uri' => 'vr.dev',
+  'root' => '/home/jhedstrom/work/drupal-6',
+);
+
 $aliases['np'] = array(
   'uri' => 'np.dev',
   'root' => '/home/jhedstrom/work/drupal',
