@@ -5,6 +5,11 @@ $aliases['wef'] = array(
   'root' => '/home/jhedstrom/work/clients/acquia-wef/docroot',
 );
 
+$aliases['dd'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/dominiondeck/app/drupal',
+);
+
 $aliases['sr'] = array(
   'uri' => 'default',
   'root' => '/home/jhedstrom/work/clients/streetroots',

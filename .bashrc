@@ -116,7 +116,7 @@ CVSROOT=:pserver:jhedstrom@cvs.drupal.org:/cvs/drupal-contrib
 
 # Aliases
 alias tun='pkill -f oolon-tunnels; ssh -f -N -i /home/jhedstrom/.ssh/id_rsa -o ControlMaster=no oolon-tunnels'
-alias o='gnome-open'
+alias o='xdg-open'
 alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
 
 # For drush make, export http_proxy for use with squid.
