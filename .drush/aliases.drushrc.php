@@ -1,5 +1,16 @@
 <?php
 
+$aliases['dd7'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/dominiondeck/app/drupal7',
+  'db-url' => 'mysql://dd7:dd7@localhost/dd7',
+);
+
+$aliases['scf'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/clients/sierra-club-foundation/app/drupal',
+);
+
 $aliases['wef'] = array(
   'uri' => 'default',
   'root' => '/home/jhedstrom/work/clients/acquia-wef/docroot',

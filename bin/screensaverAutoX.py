@@ -67,7 +67,7 @@ def screensaver_changed(state):
         set_xoff()
 
 def set_xon():
-    x_nick = '%s|afk' % \
+    x_nick = '%s|away' % \
 		(xchat.get_info('nick'))
 
     # TODO: check if /nick ! x-* , set it!
