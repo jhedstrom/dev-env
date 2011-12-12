@@ -1,5 +1,6 @@
 set nocompatible
 syntax enable
+color desert
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
