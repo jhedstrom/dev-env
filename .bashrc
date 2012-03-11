@@ -120,8 +120,13 @@ alias o='xdg-open'
 alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
 
 # For drush make, export http_proxy for use with squid.
-export http_proxy=http://localhost:3128
-export ftp_proxy=http://localhost:3128
+#export http_proxy=http://localhost:3128
+#export ftp_proxy=http://localhost:3128
+
+# drush
+if [ -f ~/.drush_bashrc ] ; then
+  . ~/.drush_bashrc
+fi
 
 # Set vim to default terminal editor
 export EDITOR=vim

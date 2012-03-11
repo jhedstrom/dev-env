@@ -1,9 +1,23 @@
 <?php
 
+$aliases['shift'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/clients/shift/app/drupal',
+);
+
+$aliases['di'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/DrupalInit/app/drupal',
+);
+
+$aliases['zoo'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/clients/Oregon-Zoo/app/drupal',
+);
+
 $aliases['dd7'] = array(
   'uri' => 'default',
-  'root' => '/home/jhedstrom/work/dominiondeck/app/drupal7',
-  'db-url' => 'mysql://dd7:dd7@localhost/dd7',
+  'root' => '/home/jhedstrom/work/dominiondeck/app/drupal',
 );
 
 $aliases['scf'] = array(
@@ -34,6 +48,11 @@ $aliases['sr'] = array(
 $aliases['vr'] = array(
   'uri' => 'vr.dev',
   'root' => '/home/jhedstrom/work/drupal-6',
+);
+
+$aliases['vr7'] = array(
+  'uri' => 'vr7.dev',
+  'root' => '/home/jhedstrom/work/drupal',
 );
 
 $aliases['np'] = array(
@@ -73,3 +92,6 @@ $aliases['d7'] = array(
 
 // Gargravarr aliases.
 require '/home/jhedstrom/work/opensourcery/drush.gargravarr/aliases.drushrc.php';
+
+// Non-local
+require '/home/jhedstrom/.drush/private.aliases.php';

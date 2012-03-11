@@ -22,6 +22,9 @@
 ; Geben
 (autoload 'geben "geben" "PHP Debugger on Emacs" t)
 
+; Git
+(autoload 'git "git" "Emacs git integration" t)
+
 (put 'downcase-region 'disabled nil)
 
 (show-paren-mode 1)

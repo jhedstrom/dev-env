@@ -10,6 +10,8 @@
         pick = cherry-pick -s
         revert = revert -s
         ci = commit -
+# see http://oli.jp/2012/git-powerup/
+        l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
 [core]
 	excludesfile = /home/jhedstrom/.gitignore
         editor = vim

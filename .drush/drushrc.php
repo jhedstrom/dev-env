@@ -146,8 +146,10 @@ $options['skip-tables'] = array(
 # $command_specific['rsync'] = array('verbose' => TRUE);
 # $command_specific['dl'] = array('cvscredentials' => 'user:pass');
 
-$command_specific['dl'] = array('destination' => 'sites/all/modules/contrib');
-
+$command_specific['dl'] = array(
+//  'destination' => 'sites/all/modules/contrib',
+  'cache' => TRUE,
+);
 
 // Specify additional directories to search for scripts
 // Use POSIX path separator (':')
@@ -174,7 +176,7 @@ $command_specific['dl'] = array('destination' => 'sites/all/modules/contrib');
  * XHProf settings.
  */
 $options['drush-xhprof-url'] = 'http://localhost/xhprof_html';
-$options['drush-xhprof-directory'] = '/usr/share/php5-xhprof';
+$options['drush-xhprof-directory'] = '/usr/local/lib/xhprof';
 
 // Git username
 $options['gitusername'] = 'jhedstrom';
