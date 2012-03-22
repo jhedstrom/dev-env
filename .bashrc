@@ -49,13 +49,18 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# drush
+if [ -f ~/.drush_bashrc ] ; then
+  . ~/.drush_bashrc
+fi
+
 # Git goodness:
 # http://www.metaltoad.com/blog/git-drupal-primer
 # GIT_PS1_SHOWDIRTYSTATE=true
 # export PS1='[\u@mb \w$(__git_ps1)]\$ '
 GIT_PS1_SHOWDIRTYSTATE=true
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)\[\033[01;36m\]☂\[\033[00m\] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)$(__drush_ps1)\[\033[01;36m\]☂\[\033[00m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1)☠ '
 fi
@@ -122,11 +127,6 @@ alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
 # For drush make, export http_proxy for use with squid.
 #export http_proxy=http://localhost:3128
 #export ftp_proxy=http://localhost:3128
-
-# drush
-if [ -f ~/.drush_bashrc ] ; then
-  . ~/.drush_bashrc
-fi
 
 # Set vim to default terminal editor
 export EDITOR=vim
