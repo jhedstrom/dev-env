@@ -15,6 +15,11 @@ $aliases['zoo'] = array(
   'root' => '/home/jhedstrom/work/clients/Oregon-Zoo/app/drupal',
 );
 
+$aliases['d8'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/drupal-8',
+);
+
 $aliases['dd7'] = array(
   'uri' => 'default',
   'root' => '/home/jhedstrom/work/dominiondeck/app/drupal',
