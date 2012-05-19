@@ -180,3 +180,8 @@ $options['drush-xhprof-directory'] = '/usr/local/lib/xhprof';
 
 // Git username
 $options['gitusername'] = 'jhedstrom';
+
+// Shell aliases.
+$options['shell-aliases']['pwdadmin'] = 'upwd admin --password=admin';
+$options['shell-aliases']['frac'] = '!drush -y fra && drush cc all';
+

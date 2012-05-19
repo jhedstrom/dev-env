@@ -27,6 +27,9 @@
   "My personal php-mode customizations."
   (c-set-style "my-php-style")
   ; More generic PHP customizations here
+
+  ; PHP Codesniffer.
+  (set (make-local-variable 'compile-command) (format "phpcs --report=emacs --standard=Drupal %s" (buffer-file-name)))
 )
 
 (provide 'drupal-mode)

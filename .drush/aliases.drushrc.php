@@ -1,5 +1,15 @@
 <?php
 
+$aliases['crp'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/clients/crp/app/drupal',
+);
+
+$aliases['os6'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/PublicSite/docroot',
+);
+
 $aliases['shift'] = array(
   'uri' => 'default',
   'root' => '/home/jhedstrom/work/clients/shift/app/drupal',
@@ -13,6 +23,11 @@ $aliases['di'] = array(
 $aliases['zoo'] = array(
   'uri' => 'default',
   'root' => '/home/jhedstrom/work/clients/Oregon-Zoo/app/drupal',
+);
+
+$aliases['d8blocks'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/contributions/core/drupal_8_blocks_everywhere',
 );
 
 $aliases['d8'] = array(
@@ -50,6 +65,11 @@ $aliases['sr'] = array(
   'root' => '/home/jhedstrom/work/clients/streetroots',
 );
 
+$aliases['ns'] = array(
+  'uri' => 'ns.dev',
+  'root' => '/home/jhedstrom/work/drupal',
+);
+
 $aliases['vr'] = array(
   'uri' => 'vr.dev',
   'root' => '/home/jhedstrom/work/drupal-6',
@@ -72,7 +92,7 @@ $aliases['ds'] = array(
 
 $aliases['dr'] = array(
   'uri' => 'dr.dev',
-  'root' => '/home/jhedstrom/work/drupal',
+  'root' => '/home/jhedstrom/work/drupal-6',
 );
 
 $aliases['osu'] = array(
