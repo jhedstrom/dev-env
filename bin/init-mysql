@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+  echo "Usage: $0 <user> [pass] [db]"
+  echo "If pass or db are not set, then all will be set to <user>."
+  exit 1
+fi
+
+NAME="$1"
+
+if [ -z "$2" ]; then
+  PASS=$NAME
+fi
+
+if [ -z "$3" ]; then
+  DB=$NAME
+fi
+
+
+COMMAND="CREATE USER '$NAME'@'localhost' IDENTIFIED BY '$PASS';
+         CREATE DATABASE $DB;
+         GRANT ALL PRIVILEGES ON $DB.* TO $NAME@'%';"
+
+echo $COMMAND | mysql -uroot -proot

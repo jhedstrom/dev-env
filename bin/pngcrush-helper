@@ -1,0 +1,16 @@
+#!/usr/bin/php
+<?php
+
+array_shift($argv);
+foreach ($argv as $file) {
+ $q_file = escapeshellarg($file);
+ $tmp = '/tmp/crush.tmp';
+ print "$file: ";
+ print `pngcrush -rem alla -reduce -brute $q_file $tmp | grep
+filesize\ reduction`;
+ if (filesize($tmp) < filesize($file)) {
+   copy($tmp, $file);
+   print "";
+ }
+ unlink($tmp);
+}
