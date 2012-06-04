@@ -32,3 +32,8 @@
 (setq show-paren-delay 0)
 
 (put 'upcase-region 'disabled nil)
+
+; Cucumber
+(add-to-list 'load-path "~/.emacs.d/cucumber.el")
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
