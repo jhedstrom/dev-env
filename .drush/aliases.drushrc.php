@@ -1,5 +1,18 @@
 <?php
 
+$aliases['eap'] = array(
+  'root' => '/home/jhedstrom/work/clients/eap/app/drupal',
+);
+
+$aliases['pug'] = array(
+  'root' => '/home/jhedstrom/work/clients/princeton-university-giving/app/drupal',
+);
+
+$aliases['cf'] = array(
+  'uri' => 'default',
+  'root' => '/home/jhedstrom/work/clients/collins/app/drupal',
+);
+
 $aliases['crp'] = array(
   'uri' => 'default',
   'root' => '/home/jhedstrom/work/clients/crp/app/drupal',
@@ -97,7 +110,7 @@ $aliases['dr'] = array(
 
 $aliases['osu'] = array(
   'uri' => 'default',
-  'root' => '/home/jhedstrom/work/clients/oregon_state_university/app/drupal',
+  'root' => '/home/jhedstrom/work/clients/osu_catalog/app/drupal',
 );
 
 $aliases['fc'] = array(
