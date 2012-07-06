@@ -1,5 +1,9 @@
 <?php
 
+$aliases['cchc'] = array(
+  'root' => '/home/jhedstrom/work/clients/cchc/app/drupal',
+);
+
 $aliases['eap'] = array(
   'root' => '/home/jhedstrom/work/clients/eap/app/drupal',
 );

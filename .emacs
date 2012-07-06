@@ -37,3 +37,14 @@
 (add-to-list 'load-path "~/.emacs.d/cucumber.el")
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+; SCSS
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/scss-mode"))
+(require 'scss-mode)
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(scss-compile-at-save nil))
