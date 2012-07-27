@@ -17,7 +17,7 @@
 (add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\|profile\\)$" . drupal-mode))
 (add-to-list 'auto-mode-alist '("/drupal.*\\.\\(php\\|inc\\)$" . drupal-mode))
 (add-to-list 'auto-mode-alist '("\\.\\(info\\|make\\)$" . conf-windows-mode))
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(js\\|json\\)$" . js2-mode))
 
 ; Geben
 (autoload 'geben "geben" "PHP Debugger on Emacs" t)
