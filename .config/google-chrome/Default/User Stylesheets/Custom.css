@@ -41,8 +41,8 @@
   content: '' !important;
 }
 
-#elements-content .parent.selected {
-  
+#elements-content .selected {
+  background: #555;
 }
 
 #elements-content .parent.selected {
