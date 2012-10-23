@@ -14,7 +14,7 @@
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ; Drupal
-(add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\|profile\\)$" . drupal-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\|php\\|profile\\)$" . drupal-mode))
 (add-to-list 'auto-mode-alist '("/drupal.*\\.\\(php\\|inc\\)$" . drupal-mode))
 (add-to-list 'auto-mode-alist '("\\.\\(info\\|make\\)$" . conf-windows-mode))
 (add-to-list 'auto-mode-alist '("\\.\\(js\\|json\\)$" . js2-mode))
@@ -48,3 +48,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(scss-compile-at-save nil))
+
+; YAML mode.
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
