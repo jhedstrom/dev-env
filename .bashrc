@@ -123,7 +123,7 @@ PATH=$PATH:/var/lib/gems/1.8/bin
 CVSROOT=:pserver:jhedstrom@cvs.drupal.org:/cvs/drupal-contrib
 
 # Aliases
-alias tun='pkill -f oolon-tunnels; ssh -f -N -i /home/jhedstrom/.ssh/id_rsa -o ControlMaster=no oolon-tunnels'
+alias tun='pkill -f autossh; autossh -f -N -i /home/jhedstrom/.ssh/id_rsa -o ControlMaster=no oolon-tunnels'
 alias o='xdg-open'
 alias cvs_stat='cvs stat | grep File | grep -v Up-to-date'
 alias c='pygmentize -O style=monokai -f console256 -g'
