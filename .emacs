@@ -1,4 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d")
+(let ((default-directory "~/.emacs.d"))
+  (normal-top-level-add-subdirs-to-load-path))
 
 ; My PHP setup
 
@@ -52,3 +54,11 @@
 ; YAML mode.
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+; Solarized dark theme
+(require 'color-theme-solarized)
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+   (color-theme-initialize)
+   (color-theme-solarized-dark)))
