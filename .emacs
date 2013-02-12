@@ -1,3 +1,9 @@
+; Global
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq css-indent-offset 2)
+(setq show-trailing-whitespace t)
+
 (add-to-list 'load-path "~/.emacs.d")
 (let ((default-directory "~/.emacs.d"))
   (normal-top-level-add-subdirs-to-load-path))
