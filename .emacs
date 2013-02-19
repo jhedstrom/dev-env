@@ -21,6 +21,10 @@
 (autoload 'markdown-mode "markdown-mode.elc" "Majore mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
+; Puppet mode
+(autoload 'puppet-mode "puppet-mode" "Major mode for editing Puppet files" t)
+(setq auto-mode-alist (cons '("\\.pp" . puppet-mode) auto-mode-alist))
+
 ; Drupal
 (add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\|php\\|profile\\)$" . drupal-mode))
 (add-to-list 'auto-mode-alist '("/drupal.*\\.\\(php\\|inc\\)$" . drupal-mode))
