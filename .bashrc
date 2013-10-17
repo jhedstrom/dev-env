@@ -137,3 +137,8 @@ export EDITOR=vim
 
 # Output MOTD
 cat /etc/motd
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export TURNIP_DEVELOPER_MODULES="devel views_ui styleguide"

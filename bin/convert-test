@@ -1,0 +1,22 @@
+#!/bin/sh
+ 
+convert_test() {
+  FILE=$1
+  sed -i '' -e's/simpletest\\UnitTestBase/Tests\\UnitTestCase/' "$FILE"
+  sed -i '' -e's/UnitTestBase/UnitTestCase/' "$FILE"
+  sed -i '' -e's/assertIdentical/assertSame/' "$FILE"
+  sed -i '' -e's/assertNotIdentical/assertNotSame/' "$FILE"
+  sed -i '' -e's/assertEqual(/assertEquals(/' "$FILE"
+  sed -i '' -e's/assertNotEqual(/assertNotEquals(/' "$FILE"
+  sed -i '' -e's/namespace Drupal\\system\\Tests\\/namespace Drupal\\Tests\\/' "$FILE"
+}
+ 
+if [ -n $1 && -f $1 ]
+then
+  convert_test $1
+else
+  find . tests -name "*.php" | while read FILE
+  do
+    convert_test $FILE
+  done
+fi
