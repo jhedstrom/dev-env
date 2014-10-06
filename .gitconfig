@@ -20,3 +20,5 @@
 	tool = vimdiff
 [url "git+ssh://jhedstrom@git.drupal.org/project/"]
   insteadOf = dm:
+[push]
+	default = simple
