@@ -20,4 +20,4 @@ COMMAND="CREATE USER '$NAME'@'localhost' IDENTIFIED BY '$PASS';
          CREATE DATABASE $DB;
          GRANT ALL PRIVILEGES ON $DB.* TO $NAME@'%';"
 
-echo $COMMAND | mysql -uroot -proot
+echo $COMMAND | mysql -uroot

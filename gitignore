@@ -1,12 +1,6 @@
 .sass-cache
-.drush/cache
-.drush/coder
-.drush/drush_bench
-.drush/drush_make
-.drush/registry_rebuild
-.emacs.d/auto-save-list/
-.emacs.d/geben/
 *~
 .emacs.d/session*
 \#*#
 .#*
+.idea

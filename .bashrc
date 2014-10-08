@@ -28,6 +28,11 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+# Source git completion on Mac OS
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+fi
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -136,7 +141,7 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 export EDITOR=vim
 
 # Output MOTD
-cat /etc/motd
+cat /usr/local/etc/motd
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"

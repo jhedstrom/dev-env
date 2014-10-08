@@ -14,8 +14,9 @@
 # see http://oli.jp/2012/git-powerup/
         l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
 [core]
-	excludesfile = /home/jhedstrom/.gitignore
+	excludesfile = /Users/jhedstrom/.gitignore_global
         editor = vim
+	excludefile = /Users/jhedstrom/.gitignore_global
 [merge]
 	tool = vimdiff
 [url "git+ssh://jhedstrom@git.drupal.org/project/"]

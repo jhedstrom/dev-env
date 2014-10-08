@@ -1,29 +1,14 @@
 <?php
 
-$aliases['d8'] = array(
-  'uri' => 'default',
-  'root' => '/home/jhedstrom/work/drupal-8',
-);
-
-$aliases['dd7'] = array(
-  'uri' => 'default',
-  'root' => '/home/jhedstrom/work/dominiondeck/app/drupal',
-);
-
-$aliases['dd'] = array(
-  'uri' => 'default',
-  'root' => '/home/jhedstrom/work/dominiondeck/app/drupal',
-);
-
-$aliases['d6'] = array(
-  'uri' => 'default',
-  'root' => '/home/jhedstrom/work/drupal-6'
-);
-
-$aliases['d7'] = array(
-  'uri' => 'default',
-  'root' => '/home/jhedstrom/work/drupal'
-);
+$directories = glob('/Users/jhedstrom/Sites/*');
+ 
+foreach ($directories as $directory) {
+  $name = array_pop(explode('/', $directory));
+  $aliases[$name] = array(
+      'uri' => "http://$name.dev",
+      'root' => $directory,
+  );
+}
 
 // Non-local
 require __DIR__ . '/private.aliases.php';
