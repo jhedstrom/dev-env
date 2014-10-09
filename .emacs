@@ -66,9 +66,5 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 ; Solarized dark theme
-(require 'color-theme-solarized)
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-   (color-theme-initialize)
-   (color-theme-solarized-dark)))
+(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized")
+(load-theme 'solarized-dark t)
