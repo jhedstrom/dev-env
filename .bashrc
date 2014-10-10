@@ -28,7 +28,7 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# Source git completion on Mac OS
+# Source git shell on Mac OS
 if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
 fi
@@ -93,6 +93,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+else
+  alias ls='ls -G'
+  alias grep='grep --color=auto'
 fi
 
 # some more ls aliases
@@ -116,6 +119,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# Source all bash_completion.d
+for f in /usr/local/etc/bash_completion.d/*; do source $f; done
+
 # Yakuake history
 shopt -s histappend
 PROMPT_COMMAND='history -a'
@@ -123,6 +129,7 @@ PROMPT_COMMAND='history -a'
 # Path
 PATH=$PATH:/home/jhedstrom/bin
 PATH=$PATH:/var/lib/gems/1.8/bin
+PATH=$PATH:~/.composer/vendor/bin
 
 # CVS
 CVSROOT=:pserver:jhedstrom@cvs.drupal.org:/cvs/drupal-contrib
