@@ -37,6 +37,7 @@
 ; Git
 (autoload 'git "git" "Emacs git integration" t)
 
+; General
 (put 'downcase-region 'disabled nil)
 
 (show-paren-mode 1)
@@ -44,6 +45,8 @@
 (setq show-paren-delay 0)
 
 (put 'upcase-region 'disabled nil)
+
+(setq column-number-mode t)
 
 ; Cucumber
 (add-to-list 'load-path "~/.emacs.d/cucumber.el")
