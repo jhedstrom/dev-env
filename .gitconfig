@@ -13,6 +13,8 @@
         diff = diff --color-words
 # see http://oli.jp/2012/git-powerup/
         l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+# see http://stackoverflow.com/a/2363495/109119
+        ignored = !git ls-files -v | grep "^[[:lower:]]"
 [core]
 	excludesfile = /Users/jhedstrom/.gitignore_global
         editor = vim
