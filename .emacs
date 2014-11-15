@@ -37,6 +37,10 @@
 ; Git
 (autoload 'git "git" "Emacs git integration" t)
 
+; Go
+(autoload 'go-mode "go-mode" "Major version for editing Go code." t)
+(add-to-list 'auto-mode-alist '("\\.\\(go\\)$" . go-mode))
+
 ; General
 (put 'downcase-region 'disabled nil)
 
