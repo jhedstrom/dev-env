@@ -15,6 +15,9 @@
         l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
 # see http://stackoverflow.com/a/2363495/109119
         ignored = !git ls-files -v | grep "^[[:lower:]]"
+# Download and apply a patch.
+        a = apply --index
+        ac = "!f() { curl $@ | git a; }; f"
 [core]
 	excludesfile = /Users/jhedstrom/.gitignore_global
         editor = vim
