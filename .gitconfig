@@ -24,6 +24,8 @@
 	excludefile = /Users/jhedstrom/.gitignore_global
 [merge]
 	tool = vimdiff
+[url "git@github.com:"]
+  insteadOf = gh:
 [url "git+ssh://jhedstrom@git.drupal.org/project/"]
   insteadOf = dm:
 [push]

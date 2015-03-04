@@ -119,6 +119,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# Tab complete directories only on `cd` command
+complete -d cd
+
 # Source all bash_completion.d
 for f in /usr/local/etc/bash_completion.d/*; do source $f; done
 
