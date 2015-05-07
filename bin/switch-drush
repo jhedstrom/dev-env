@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+# Switch version of drush
+if [[ -z $1 ]]; then
+  echo "Usage: $0 <version/tag/branch>"
+  exit 1
+fi
+
+DRUSH="`which drush`"
+BINARY=`readlink $DRUSH`
+LOCATION="`dirname -- "$BINARY"`"
+cd $LOCATION
+git checkout $1
+cd -

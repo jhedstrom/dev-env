@@ -1,6 +1,7 @@
 ; Global
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+(setq js2-indent-offset 2)
 (setq css-indent-offset 2)
 (setq show-trailing-whitespace t)
 

@@ -18,6 +18,8 @@
 # Download and apply a patch.
         a = apply --index
         ac = "!f() { curl $@ | git a; }; f"
+# Reset Drupal
+        nuke = !cd "$(git rev-parse --show-toplevel)" && git reset HEAD . && git co . && git clean -fd core && cd -
 [core]
 	excludesfile = /Users/jhedstrom/.gitignore_global
         editor = vim
