@@ -155,3 +155,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export TURNIP_DEVELOPER_MODULES="devel views_ui styleguide"
+
+declare -x SIMPLETEST_BASE_URL="http://d8.dev"
+declare -x SIMPLETEST_DB="mysql://d8:d8@localhost/d8"
