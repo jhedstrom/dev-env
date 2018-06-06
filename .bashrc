@@ -156,5 +156,34 @@ eval "$(rbenv init -)"
 
 export TURNIP_DEVELOPER_MODULES="devel views_ui styleguide"
 
-declare -x SIMPLETEST_BASE_URL="http://d8.dev"
+declare -x SIMPLETEST_BASE_URL="http://d8.devl"
 declare -x SIMPLETEST_DB="mysql://d8:d8@localhost/d8"
+declare -x BROWSERTEST_OUTPUT_DIRECTORY="/tmp"
+declare -x COMPOSER_EXIT_ON_PATCH_FAILURE="1"
+# Include Drush completion.
+if [ -f "/Users/jonathan.hedstrom/.drush/drush.complete.sh" ] ; then
+  source /Users/jonathan.hedstrom/.drush/drush.complete.sh
+fi
+
+# Toggle xdebug off and then on for composer.
+composer_toggle() {
+  xdebug-toggle
+  composer $@
+  xdebug-toggle
+}
+alias composer=composer_toggle
+
+# Include Drush prompt customizations.
+#if [ -f "/Users/jonathan.hedstrom/.drush/drush.prompt.sh" ] ; then
+#  source /Users/jonathan.hedstrom/.drush/drush.prompt.sh
+#fi
+
+# Support for DevTools
+eval "$(devtools config)"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash

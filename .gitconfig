@@ -25,7 +25,8 @@
 [core]
 	excludesfile = /Users/jhedstrom/.gitignore_global
         editor = vim
-	excludefile = /Users/jhedstrom/.gitignore_global
+[commit]
+  gpgsign = true
 [merge]
 	tool = vimdiff
 [url "git@github.com:"]
@@ -33,4 +34,6 @@
 [url "git+ssh://jhedstrom@git.drupal.org/project/"]
   insteadOf = dm:
 [push]
-	default = simple
+  default = simple
+[diff]
+  renames=copies

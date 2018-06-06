@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+define('XDEBUG_CONFIG', implode(glob(PHP_CONFIG_FILE_SCAN_DIR . "/*xdebug*")));
+define('HTTPD_EXECUTABLE', exec('which httpd'));
+define('EXTENSION', '(zend_extension\s*=.*?xdebug)');
+$s = file_get_contents(XDEBUG_CONFIG);
+$replaced = preg_replace('/;' . EXTENSION . '/', '$1', $s);
+$isOn = $replaced != $s;
+if (!$isOn) {
+  $replaced = preg_replace('/' . EXTENSION . '/', ';$1', $s);
+}
+echo 'xdebug is ' . ($isOn ? 'ON' : 'OFF') . " now. Restarting apache...\n";
+file_put_contents(XDEBUG_CONFIG, $replaced);
+exec(HTTPD_EXECUTABLE . ' -k restart');
