@@ -32,4 +32,4 @@ for (i, p) in enumerate(dirs[:-PWD_LAST]):
     
     dirs[i] = shorten(p)
 
-print path(dirs)
+print(path(dirs))

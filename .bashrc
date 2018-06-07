@@ -151,9 +151,6 @@ export EDITOR=vim
 # Output MOTD
 cat /usr/local/etc/motd
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 export TURNIP_DEVELOPER_MODULES="devel views_ui styleguide"
 
 declare -x SIMPLETEST_BASE_URL="http://d8.devl"
@@ -177,9 +174,6 @@ alias composer=composer_toggle
 #if [ -f "/Users/jonathan.hedstrom/.drush/drush.prompt.sh" ] ; then
 #  source /Users/jonathan.hedstrom/.drush/drush.prompt.sh
 #fi
-
-# Support for DevTools
-eval "$(devtools config)"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
