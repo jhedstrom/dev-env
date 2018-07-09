@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+#
+# Open latest file in a given directory.
+#
+import os
+import glob
+import sys
+
+path = os.path.abspath(sys.argv[1])
+
+def find_latest(file_path):
+    list_of_files = glob.glob(file_path + '/*')
+    file = max(list_of_files, key=os.path.getctime)
+    return file
+
+os.system("open %s" %(find_latest(path)))

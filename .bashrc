@@ -153,8 +153,9 @@ cat /usr/local/etc/motd
 
 export TURNIP_DEVELOPER_MODULES="devel views_ui styleguide"
 
-declare -x SIMPLETEST_BASE_URL="http://d8.devl"
-declare -x SIMPLETEST_DB="mysql://d8:d8@localhost/d8"
+declare -x SIMPLETEST_BASE_URL="http://d8.test"
+#declare -x SIMPLETEST_DB="mysql://d8:d8@localhost/d8"
+declare -x SIMPLETEST_DB="sqlite://localhost//tmp/db.sqlite"
 declare -x BROWSERTEST_OUTPUT_DIRECTORY="/tmp"
 declare -x COMPOSER_EXIT_ON_PATCH_FAILURE="1"
 # Include Drush completion.
@@ -164,9 +165,9 @@ fi
 
 # Toggle xdebug off and then on for composer.
 composer_toggle() {
-  xdebug-toggle
+#  xdebug-toggle
   composer $@
-  xdebug-toggle
+#  xdebug-toggle
 }
 alias composer=composer_toggle
 
