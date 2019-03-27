@@ -31,7 +31,7 @@
 	tool = vimdiff
 [url "git@github.com:"]
   insteadOf = gh:
-[url "git+ssh://jhedstrom@git.drupal.org/project/"]
+[url "git@git.drupal.org:project/"]
   insteadOf = dm:
 [push]
   default = simple
